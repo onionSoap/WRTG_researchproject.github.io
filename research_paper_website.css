@@ -1,0 +1,173 @@
+
+
+:root {
+    /* Const definitions */
+    --background-color_op2: #3d7e61;
+    --secondary_box_shadow_op2: inset 0 0 5rem rgba(100, 225, 66, 0.731);;
+
+    --background-color: rgb(6, 3, 28);
+    --secondary_box_shadow: inset 0 0 5rem rgba(0, 0, 0, .5);;
+}
+
+html{
+    height:100%;
+}
+
+body {
+    height:100%;
+    margin:0%;
+    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, 0.5);
+    box-shadow: var(--secondary_box_shadow);
+    background-color:var(--background-color);
+}
+
+.highlight_black {
+    background-color:rgba(0, 0, 0, 0.435);
+}
+/* 
+.section_1 {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position:absolute;
+} */
+/* 
+.background_img {
+    background-image: url("SS_057_LaFollette_Franklin_DNA_1200p.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    pointer-events: none;
+
+
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    height:100%;
+
+} */
+
+.background_img {
+    position:fixed;
+    opacity:20%;
+    z-index:-1;
+    height:70%;
+    width: auto;
+    filter: blur(3px);
+    -webkit-filter: blur(3px); /*For safari*/
+    pointer-events: none;
+
+} 
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:92.5%;
+}
+
+
+.section_2 {
+    background-color:white; 
+    display: flex;
+    height:max-content; 
+    width:auto; 
+    padding-top:5%; 
+    padding-left:12%; 
+    padding-right:15%; 
+    padding-bottom:2%;
+    text-align:center;
+}
+
+.grid {
+    display:grid; 
+    grid-column-gap:10%;
+}
+
+.center { 
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-100%, -100%);
+}
+
+.responsive {
+    height:100%;
+    width: auto;
+}
+
+
+/*
+* Nav bar horizontal
+* TODO: fix this to float left 
+*/
+
+.navbar_h {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(155, 142, 110, 0.08);
+}
+
+.navbar_h > li {
+  float: left; /* this not working-- flexbox container conflicting with it-- or the 'block' display? */
+}
+
+.navbar_h > li > a {
+  display: block;
+  color: grey;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar_h > li > a:hover {
+  background-color: rgba(0, 0, 0, 0.435);
+}
+
+/*
+* Nav bar vertical
+*/
+
+.navbar_v {
+  margin-top:50%;
+  padding-top:20%; 
+  padding-bottom:20%;
+  padding-left:0;
+  padding-right:0;
+  list-style-type: none;
+  width: 100%; /*change to 20%*/
+  background-color: rgba(155, 142, 110, 0.08);
+  position:sticky;
+  top:5%;
+}
+
+.navbar_v > li > a {
+  text-shadow:none;
+  display: block;
+  color: grey;
+  text-align: center;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.navbar_v > li > a:hover {
+  background-color: rgba(0, 0, 0, 0.435);
+  color:white;
+}
+
+.main-text {
+  text-align:left;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, 0.25);
+}
+
+.main-text > h1{
+  font-size:400%;
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
