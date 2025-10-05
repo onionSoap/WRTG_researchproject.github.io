@@ -93,7 +93,7 @@
                         <img src="https://www.fjc.gov/sites/default/files/dna/Section_2_Figure_1.%20DNA_Is_composed_of_nucleotide_bases.png" style="width:70%;height:auto;" href="https://www.fjc.gov/content/361230/DNA-basics-nucleotides-genes-genome">
                         <p>
                             The main part of DNA that we'll be focusing on are its nitrogenous bases, the way DNA stores information. These four bases are 'Adenine', 'Guanine', 'Cytosine' and 'Thymine', also often referred to as 'A', 'G', 'C', and 'T'. 
-                            These bases are complimentary: Adenine fits with Thymine, and Guanine fits with Cytosine. 
+                            These bases are complimentary: Adenine binds with Thymine, and Guanine binds with Cytosine. 
                         </p>
 
                         <h2>Codons: How DNA is read</h2>
@@ -135,25 +135,10 @@
 
                     <br>
                     <h1 id="ErrMiti" style="font-size:400%;">Error Mitigation</h1>
-                    
-                        <h2> Constrained Coding VS Unconstrained Coding </h2>
-                            <p> The following types of sequences cause issues with the synthesis & sequencing processes: </p>
-                            <ul>
-                                <li> Homopolymers: repeated bases, like 'BBBB' </li>
-                                <li> Unbalanced GC content: roughly half of the bases should be either guanine or cytosine. </li>
-                                <li> 'Hairpin' issues: sequences that contain complimentary parts (like "AGC TCG") will bond to themselevs, causing issues with PCR </li>
-                                <li> Matching suffixes & prefixes </li>
-                            </ul>
-
-                            <p> It appears that there are two main approaches to avoiding these sequences. 
-                                There is 'constrained coding', which specifically generates sequences that avoid these issues, and then 'unconstrained coding', which
-                                simply creates pseudo-random sequences. </p>
-                            <p><a href="https://ieeexplore.ieee.org/document/11164904">Weindel et. al: https://ieeexplore.ieee.org/document/11164904</a></p>
                         
-                        <h2> Constrained Coding Techniques </h2>
-                        
-                        <div style="margin-left: 40px;">
 
+                        <h2> Common Error Mitigation Techniques </h2>
+                            <div style="margin-left: 40px;">
                             <h5> Parity Checks: 4-Way Redundancy & XOR comparisons </h5>
                                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
                                 </p>
@@ -174,14 +159,33 @@
                                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere.
                                 </p>
                                 <p><a href="https://onlinelibrary.wiley.com/doi/full/10.1002/anie.201411378">Grass et. al: https://onlinelibrary.wiley.com/doi/full/10.1002/anie.201411378</a></p>
-                        </div>
-
-                        
-                        <h2> Unconstrained Coding Techniques </h2>
-                            <div style="margin-left: 40px;">
-                                <p> Pseudo-Randomness </p>
-                                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
                             </div>
+
+                        <h2> Constrained Coding VS Unconstrained Coding </h2>
+                            <p> The following types of sequences cause issues with the synthesis & sequencing processes: </p>
+                            <ul>
+                                <li> Homopolymers: repeated bases, like 'BBBB' </li>
+                                <li> Unbalanced GC content: roughly half of the bases should be either guanine or cytosine. </li>
+                                <li> 'Hairpin' issues: sequences that contain complimentary parts (like "AGC TCG") will bond to themselevs, causing issues with PCR </li>
+                                <li> Matching suffixes & prefixes </li>
+                            </ul>
+
+                            <p> It appears that there are two main approaches to avoiding these sequences. 
+                                There is 'constrained coding', which specifically generates sequences that avoid these issues, and then 'unconstrained coding', which
+                                simply creates pseudo-random sequences. </p>
+                            <p><a href="https://ieeexplore.ieee.org/document/11164904">Weindel et. al: https://ieeexplore.ieee.org/document/11164904</a></p>
+                        
+                        <div style="margin-left: 40px;">
+                        <h5> Constrained Coding Techniques </h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. 
+                                </p>
+                        
+                        <h5> Unconstrained Coding Techniques </h5>
+                                <p> Pseudo-Randomness </p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. 
+                                </p>
+                                <a href="https://www.nature.com/articles/nbt.4079#MOESM4">https://www.nature.com/articles/nbt.4079#MOESM4</a>
+                        </div>
                     <br>
 
                     <h1 id="OtherCons"> Further Considerations </h1>
