@@ -123,20 +123,22 @@
                     <h1 id="ErrMiti" style="font-size:400%;">Error Mitigation</h1>
                     
                         <h2> Constrained Coding VS Unconstrained Coding </h2>
-                            <p> lorem ipsum delorem sit amet consectetur adipiscing elit!</p>
+                            <p> The following types of sequences cause issues with the synthesis & sequencing processes: </p>
+                            <ul>
+                                <li> Homopolymers: repeated bases, like 'BBBB' </li>
+                                <li> Unbalanced GC content: roughly half of the bases should be either guanine or cytosine. </li>
+                                <li> 'Hairpin' issues: sequences that contain complimentary parts (like "AGC TCG") will bond to themselevs, causing issues with PCR </li>
+                                <li> Matching suffixes & prefixes </li>
+                            </ul>
+
+                            <p> It appears that there are two main approaches to avoiding these sequences. 
+                                There is 'constrained coding', which specifically generates sequences that avoid these issues, and then 'unconstrained coding', which
+                                simply creates pseudo-random sequences. </p>
                             <p><a href="https://ieeexplore.ieee.org/document/11164904">Weindel et. al: https://ieeexplore.ieee.org/document/11164904</a></p>
                         
                         <h2> Constrained Coding Techniques </h2>
                         
                         <div style="margin-left: 40px;">
-                            <h5> Sequences to be Avoided </h5>
-                            <p> The following types of sequences cause issues with the synthesis & sequencing processes: </p>
-                            <ul>
-                                <li> Homopolymers </li>
-                                <li> 50% GC balancing </li>
-                                <li> Matching suffixes & prefixes </li>
-                                <li> 'Hairpin' issues </li>
-                            </ul>
 
                             <h5> Parity Checks: 4-Way Redundancy & XOR comparisons </h5>
                                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
@@ -158,10 +160,6 @@
                                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere.
                                 </p>
                                 <p><a href="https://onlinelibrary.wiley.com/doi/full/10.1002/anie.201411378">Grass et. al: https://onlinelibrary.wiley.com/doi/full/10.1002/anie.201411378</a></p>
-                            
-                            <h5> Other, Untested Error Correction Techniques to Consider </h5>
-                                <p>Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
-                                </p>
                         </div>
 
                         
